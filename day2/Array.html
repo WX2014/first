@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        var ary=[1,2,3,4];
+        // ary.push(5,5,3,6,8,7);
+        // console.log(ary);
+        // var n=ary.push(5,5,3,6,8,7);
+        //push在最后一项增加，pop删除最后一项
+        //返回值后的数组长度
+
+        function show(){
+            //alert(12);
+            return;   //返回结果给外界，打断运行
+            // alert(123);
+        }
+        var f=show();
+        // alert(f);
+        var n=ary.unshift(100,222,333); //增加，与push相同
+        // console.log(n);
+        ary=[12,23,34,45,56];
+        ary.sort(function(a,b){   //sort返回结果是排好序后的结果
+            return a -b;   //若为a-b为升序，反之为降序
+        })
+        
+        // ary = [65,34,688,456,8908];
+        // var ary3 = ary.sort(function (a,b) {
+        // return a -b;
+        // //返回值a - b 就是一个升序
+        // // 返回 b-a 就是一个降序
+        // })//sort 的返回结果是排好序之后的数组
+        // console.log(ary3 === ary)
+
+        //reverse
+        //reverse.ary 数组的反转，返回的结果与原数组是一个地址
+
+        //foreach 用来循环数组的
+        ary=[10,20,30,40];
+        ary.forEach(function (item,index){
+            // alert(item);  //循环数组的每一项
+            // alert(index); //循环的每一项的索引
+        })
+
+        //filter 本身有返回值    过滤
+        var ary2=ary.filter(function (item,index){
+
+        })
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
